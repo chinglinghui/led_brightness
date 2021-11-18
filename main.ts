@@ -1,48 +1,7 @@
 input.onButtonPressed(Button.A, function () {
-    list = [
-    [
-    0,
-    1,
-    0,
-    1,
-    0
-    ],
-    [
-    1,
-    0,
-    1,
-    0,
-    1
-    ],
-    [
-    0,
-    1,
-    0,
-    1,
-    0
-    ],
-    [
-    1,
-    0,
-    1,
-    0,
-    1
-    ],
-    [
-    0,
-    1,
-    0,
-    1,
-    0
-    ]
-    ]
     for (let Y = 0; Y <= 4; Y++) {
         for (let X = 0; X <= 4; X++) {
-            if (list[Y][X] == 1) {
-                led.plot(X, Y)
-            } else {
-                led.unplot(X, Y)
-            }
+            led.plotBrightness(X, Y, 51 * list[Y][X])
         }
     }
     list.unshift(list.pop())
@@ -86,12 +45,7 @@ list = [
 0
 ]
 ]
-for (let Y = 0; Y <= 4; Y++) {
-    for (let X = 0; X <= 4; X++) {
-        led.plotBrightness(X, Y, 51 * list[Y][X])
-    }
-}
-basic.forever(function () {
+while (!(input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B) || input.buttonIsPressed(Button.AB))) {
     for (let Y = 0; Y <= 4; Y++) {
         for (let X = 0; X <= 4; X++) {
             led.plotBrightness(X, Y, 51 * list[Y][X])
@@ -99,4 +53,8 @@ basic.forever(function () {
     }
     list.unshift(list.pop())
     basic.pause(100)
+}
+basic.clearScreen()
+basic.forever(function () {
+	
 })
