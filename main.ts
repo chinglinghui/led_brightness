@@ -1,45 +1,102 @@
-let list = [
+input.onButtonPressed(Button.A, function () {
+    list = [
+    [
+    0,
+    1,
+    0,
+    1,
+    0
+    ],
+    [
+    1,
+    0,
+    1,
+    0,
+    1
+    ],
+    [
+    0,
+    1,
+    0,
+    1,
+    0
+    ],
+    [
+    1,
+    0,
+    1,
+    0,
+    1
+    ],
+    [
+    0,
+    1,
+    0,
+    1,
+    0
+    ]
+    ]
+    for (let Y = 0; Y <= 4; Y++) {
+        for (let X = 0; X <= 4; X++) {
+            if (list[Y][X] == 1) {
+                led.plot(X, Y)
+            } else {
+                led.unplot(X, Y)
+            }
+        }
+    }
+    list.unshift(list.pop())
+    basic.pause(100)
+})
+let list: number[][] = []
+list = [
 [
 0,
-1,
+2,
 0,
-1,
+2,
 0
 ],
 [
-1,
+3,
 0,
-1,
+3,
 0,
-1
+3
 ],
 [
 0,
-1,
+4,
 0,
-1,
+4,
 0
 ],
 [
-1,
+5,
 0,
-1,
+5,
 0,
-1
+5
 ],
 [
 0,
-1,
+4,
 0,
-1,
+4,
 0
 ]
 ]
-for (let index = 0; index <= 24; index++) {
-    if (list[1][index % 5 + 1] == 0) {
-        led.toggle(Math.floor(index / 5), index % 5)
+for (let Y = 0; Y <= 4; Y++) {
+    for (let X = 0; X <= 4; X++) {
+        led.plotBrightness(X, Y, 51 * list[Y][X])
     }
 }
 basic.forever(function () {
-	
+    for (let Y = 0; Y <= 4; Y++) {
+        for (let X = 0; X <= 4; X++) {
+            led.plotBrightness(X, Y, 51 * list[Y][X])
+        }
+    }
+    list.unshift(list.pop())
+    basic.pause(100)
 })
