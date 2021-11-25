@@ -1,6 +1,6 @@
 function type1 () {
-    if (randint(0, 2) == 0) {
-        list = [
+    while (_type == 1) {
+        list2 = [
         [
         0,
         1,
@@ -40,159 +40,226 @@ function type1 () {
     }
 }
 function type2 () {
-    if (randint(0, 2) == 0) {
-        list = [
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ]
-        ]
+    list2 = [
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ]
+    ]
+    while (_type == 2) {
+        if (randint(0, 2) == 0) {
+            list2 = [
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ]
+            ]
+        }
     }
 }
 input.onButtonPressed(Button.A, function () {
     _type = 1
+    type1()
 })
 function type3 () {
-    if (randint(0, 2) == 0) {
-        list = [
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ],
-        [
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5),
-        randint(0, 5)
-        ]
-        ]
+    list2 = [
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ],
+    [
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5),
+    randint(0, 5)
+    ]
+    ]
+    while (_type == 3) {
+        if (randint(0, 2) == 0) {
+            list2 = [
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ],
+            [
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5),
+            randint(0, 5)
+            ]
+            ]
+        }
     }
 }
 input.onButtonPressed(Button.AB, function () {
     _type = 3
+    type3()
 })
 input.onButtonPressed(Button.B, function () {
     _type = 2
+    type2()
 })
 function type0 () {
-    list = [
-    [
-    0,
-    5,
-    0,
-    5,
-    0
-    ],
-    [
-    5,
-    0,
-    5,
-    0,
-    5
-    ],
-    [
-    0,
-    5,
-    0,
-    5,
-    0
-    ],
-    [
-    5,
-    0,
-    5,
-    0,
-    5
-    ],
-    [
-    0,
-    5,
-    0,
-    5,
-    0
-    ]
-    ]
+    while (_type == 0) {
+        list2 = [
+        [
+        0,
+        5,
+        0,
+        5,
+        0
+        ],
+        [
+        5,
+        0,
+        5,
+        0,
+        5
+        ],
+        [
+        0,
+        5,
+        0,
+        5,
+        0
+        ],
+        [
+        5,
+        0,
+        5,
+        0,
+        5
+        ],
+        [
+        0,
+        5,
+        0,
+        5,
+        0
+        ]
+        ]
+    }
 }
-let list: number[][] = []
+let list2: number[][] = []
 let _type = 0
 _type = 0
+type0()
 basic.forever(function () {
     for (let Y = 0; Y <= 4; Y++) {
         for (let X = 0; X <= 4; X++) {
-            for (let Y = 0; Y <= 4; Y++) {
-                for (let X = 0; X <= 4; X++) {
-                    led.plotBrightness(X, Y, 51 * list[Y][X])
-                }
-            }
-            list.unshift(list.pop())
-            basic.pause(100)
-            if (_type == 0) {
-                type0()
-            } else if (_type == 1) {
-                type1()
-            } else if (_type == 2) {
-                type2()
-            } else {
-                if (_type == 3) {
-                	
-                }
-            }
+            led.plotBrightness(X, Y, 51 * list2[Y][X])
         }
     }
 })
